@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="euclid"
+          fetch="https://github.com/euclidOS-AOSP/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/16" />
+
+  <remote name="euclid-gitlab"
+          fetch="https://gitlab.com/euclidos"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/16" />
+
+  <!-- Android Manifest  -->
+  <project path="manifest" name="manifest" remote="euclid" />
+  
+  <project path="art" name="art" remote="euclid" />
+  
+  <project path="bionic" name="bionic" groups="pdk" remote="euclid"/>
+
+  <!-- Bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="euclid" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk-cw" remote="euclid" />
+
+  <!-- Build -->
+  <project path="build/bazel" name="build_bazel" groups="pdk" remote="euclid" >
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
+    <linkfile src="bazel.BUILD" dest="BUILD" />
+  </project>
+
+  <!-- Build  -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="euclid" >
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="euclid" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+  
+  <!-- Device  -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="euclid" />
+  
+  <!-- External  -->
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="euclid" />
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" groups="pdk" remote="euclid" />
+  <project path="external/piex" name="external_piex" groups="pdk" remote="euclid" />
+  <project path="external/lz4" name="external_lz4" groups="pdk" remote="euclid" />
+
+  <!-- Hardware -->
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="euclid" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="euclid" />
+
+  <!-- Lineage SDK  -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="euclid" />
+
+  <!-- Frameworks  -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="euclid" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="euclid" />
+
+  <!-- Kernel -->
+  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="euclid" />
+
+  <!-- euclid Packages  -->
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="euclid" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="euclid" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="euclid" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="euclid" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="euclid" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="euclid" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="euclid" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="euclid" />
+
+  <!-- euclid Services  -->
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="euclid" />
+
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="euclid" />
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="euclid" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="euclid" />
+  
+  <!-- AOSP Modules  -->
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="euclid" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+
+  <!-- Platform -->
+  <project path="platform_testing" name="platform_testing" groups="pdk-fs,pdk-cw-fs,cts,sysui-studio" remote="euclid" />
+
+  <!-- AOSP Services  -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+
+  <!-- System  -->
+  <project path="system/core" name="system_core" groups="pdk" remote="euclid" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" groups="pdk" remote="euclid" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="euclid" />
+  <project path="system/bpf" name="system_bpf" groups="pdk" remote="euclid" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="euclid" />
+
+  <!-- Vendor  -->
+  <project path="vendor/extras" name="vendor_extras" remote="euclid" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="euclid" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="euclid" />
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" />
+  <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="euclid-gitlab" />
+  <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="euclid-gitlab" />
+  <project path="vendor/pixel/clocks" name="vendor_pixel_clocks" remote="euclid-gitlab" />
+  <project path="vendor/certification" name="vendor_certification" remote="euclid" />
+</manifest>
