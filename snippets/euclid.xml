@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="euclid"
+           fetch="https://github.com/euclidOS-AOSP"
+           revision="refs/heads/16.1" />
+
+  <remote  name="euclid-gitlab"
+           fetch="https://gitlab.com/euclidos"
+           revision="refs/heads/16" />
+
+  <!-- euclid additions -->
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="euclid" />
+
+  <!-- art -->
+  <project path="art" name="art" remote="euclid" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" remote="euclid" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="euclid" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="euclid" />
+
+  <!-- build -->
+  <project path="build/make" name="build" groups="pdk" remote="euclid" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="euclid" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- device -->
+  <project path="device/euclid/sepolicy" name="device_euclid_sepolicy" remote="euclid" />
+
+  <!-- external -->
+  <project path="external/avb" name="external_avb" groups="pdk" remote="euclid" />
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="euclid" />
+  <project path="external/dtc" name="external_dtc" groups="pdk" remote="euclid" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="euclid" />
+  <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="euclid" />
+  <project path="external/mksh" name="external_mksh" groups="pdk" remote="euclid" />
+  <project path="external/setupcompat" name="external_setupcompat" groups="pdk,sysui-studio" remote="euclid" />
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="euclid" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" groups="pdk" remote="euclid" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="euclid" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="euclid" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="euclid" />
+  <project path="frameworks/base" name="frameworks_base" remote="euclid" />
+  <project path="frameworks/native" name="frameworks_native" remote="euclid" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="euclid" />
+
+  <!-- hardware -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="euclid" />
+  <project path="hardware/euclid/interfaces" name="hardware_euclid_interfaces" remote="euclid" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="euclid" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="euclid" />
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="euclid" />
+  <project path="hardware/samsung/nfc" name="hardware_samsung_nfc" groups="pdk" remote="euclid" />
+  <project path="hardware/st/nfc" name="hardware_st_nfc" groups="pdk" remote="euclid" />
+
+  <!-- packages -->
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="euclid" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
+  <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="euclid" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="euclid" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+
+  <!-- system -->
+  <project path="system/bpf" name="system_bpf" remote="euclid" />
+  <project path="system/chre" name="system_chre" groups="pdk" remote="euclid" />
+  <project path="system/core" name="system_core" remote="euclid" />
+  <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="euclid" />
+  <project path="system/libhidl" name="system_libhidl" remote="euclid" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="euclid" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="euclid" />
+  <project path="system/security" name="system_security" remote="euclid" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="euclid" />
+  <project path="system/update_engine" name="system_update_engine" remote="euclid" />
+  <project path="system/vold" name="system_vold" remote="euclid" />
+  <project path="system/libziparchive" name="system_libziparchive" groups="pdk" remote="euclid" />
+  <project path="system/logging" name="system_logging" groups="pdk" remote="euclid" />
+  <project path="system/media" name="system_media" groups="pdk" remote="euclid" />
+
+  <!-- vendor -->
+  <project path="vendor/extras" name="vendor_extras" remote="euclid" />
+  <project path="vendor/euclid" name="vendor_euclid" remote="euclid" />
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" />
+  <project path="vendor/pixel/clocks" name="vendor_pixel_clocks" remote="euclid-gitlab" />
+  <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="euclid-gitlab" />
+  <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="euclid-gitlab" />
+</manifest>
