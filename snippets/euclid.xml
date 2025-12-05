@@ -66,6 +66,7 @@
   <project path="hardware/interfaces" name="hardware_interfaces" remote="euclid" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="euclid" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="euclid" />
+  <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="euclid" />
   <project path="hardware/samsung/nfc" name="hardware_samsung_nfc" groups="pdk" remote="euclid" />
   <project path="hardware/st/nfc" name="hardware_st_nfc" groups="pdk" remote="euclid" />
 
