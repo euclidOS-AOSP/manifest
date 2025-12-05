@@ -75,6 +75,7 @@
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
   <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="euclid" />
+  <project path="packages/apps/VendorSupport" name="packages_apps_VendorSupport" remote="euclid" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="euclid" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
