@@ -72,7 +72,11 @@
 
   <!-- packages -->
   <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="euclid" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="euclid" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="euclid" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="euclid" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="euclid" />
   <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="euclid" />
   <project path="packages/apps/VendorSupport" name="packages_apps_VendorSupport" remote="euclid" />
@@ -101,7 +105,7 @@
   <project path="vendor/certification" name="vendor_certification" remote="euclid" />
   <project path="vendor/extras" name="vendor_extras" remote="euclid" />
   <project path="vendor/euclid" name="vendor_euclid" remote="euclid" />
-  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" />
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" revision="16.1" />
   <project path="vendor/pixel/clocks" name="vendor_pixel_clocks" remote="euclid-gitlab" />
   <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="euclid-gitlab" />
   <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="euclid-gitlab" />
