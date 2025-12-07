@@ -7,7 +7,7 @@
 
   <remote  name="euclid-gitlab"
            fetch="https://gitlab.com/euclidos"
-           revision="refs/heads/16" />
+           revision="refs/heads/16.1" />
 
   <!-- euclid additions -->
   <!-- manifest -->
@@ -105,7 +105,7 @@
   <project path="vendor/certification" name="vendor_certification" remote="euclid" />
   <project path="vendor/extras" name="vendor_extras" remote="euclid" />
   <project path="vendor/euclid" name="vendor_euclid" remote="euclid" />
-  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" revision="16.1" />
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" />
   <project path="vendor/pixel/clocks" name="vendor_pixel_clocks" remote="euclid-gitlab" />
   <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="euclid-gitlab" />
   <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="euclid-gitlab" />
