@@ -59,6 +59,7 @@
   <project path="frameworks/base" name="frameworks_base" remote="euclid" />
   <project path="frameworks/native" name="frameworks_native" remote="euclid" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="euclid" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
 
   <!-- hardware -->
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="euclid" />
