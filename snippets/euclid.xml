@@ -77,6 +77,7 @@
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="euclid" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="euclid" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="euclid" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="euclid" />
   <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="euclid" />
