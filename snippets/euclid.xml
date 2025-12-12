@@ -62,6 +62,7 @@
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
 
   <!-- hardware -->
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="euclid" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="euclid" />
   <project path="hardware/euclid/interfaces" name="hardware_euclid_interfaces" remote="euclid" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="euclid" />
