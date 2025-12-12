@@ -15,6 +15,7 @@
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="lineage" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
+  <project path="external/zstd" name="android_external_zstd" remote="lineage" />
 
   <!-- hardware -->
   <project path="hardware/google/camera" name="android_hardware_google_camera" groups="pdk" remote="lineage" />
@@ -162,5 +163,6 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pakala-vendor" remote="lineage" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,pakala-vendor" remote="lineage" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="lineage" />
+  <project path="vendor/apn" name="android_vendor_apn" remote="lineage" revision="main" />
 
 </manifest>
