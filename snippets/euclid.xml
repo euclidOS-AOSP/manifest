@@ -108,6 +108,7 @@
 
   <!-- vendor -->
   <project path="vendor/certification" name="vendor_certification" remote="euclid" />
+<project path="vendor/extra" name="vendor_extra" remote="euclid" />
   <project path="vendor/extras" name="vendor_extras" remote="euclid-gitlab" />
   <project path="vendor/euclid" name="vendor_euclid" remote="euclid" />
   <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="euclid-gitlab" />
