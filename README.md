@@ -13,7 +13,7 @@ familiar with [Git and Repo](https://source.android.com/setup/build/downloading)
 ### Sync our source ###
 
 ```bash
-repo init -u https://github.com/euclidOS-AOSP/manifest.git -b 16.1 --git-lfs
+repo init -u https://github.com/euclidOS-AOSP/manifest.git -b test --git-lfs
 ```
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
