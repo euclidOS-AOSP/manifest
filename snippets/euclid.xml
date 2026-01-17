@@ -56,7 +56,7 @@
 
   <!-- frameworks -->
   <project path="frameworks/av" name="frameworks_av" remote="euclid" />
-  <project path="frameworks/base" name="frameworks_base" remote="euclid" revision="test"/>
+  <project path="frameworks/base" name="frameworks_base" remote="euclid" revision="test-pif"/>
   <project path="frameworks/native" name="frameworks_native" remote="euclid" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="euclid" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
@@ -79,9 +79,9 @@
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="euclid" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="euclid" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="euclid" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="euclid" revision="test2"/>
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="euclid" revision="test"/>
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="euclid" />
-  <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" revision="test"/>
+  <project path="packages/apps/Prism" name="packages_apps_Prism" remote="euclid" revision="test-pif"/>
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="euclid" revision="test"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="euclid" />
   <project path="packages/apps/VendorSupport" name="packages_apps_VendorSupport" remote="euclid" />
