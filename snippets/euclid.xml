@@ -81,6 +81,7 @@
 
   <!-- packages -->
   <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="euclid" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="euclid" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="euclid" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="euclid" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="euclid" />
