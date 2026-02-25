@@ -104,6 +104,7 @@
   <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="euclid" />
   <project path="system/libhidl" name="system_libhidl" remote="euclid" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="euclid" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="euclid" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="euclid" />
   <project path="system/security" name="system_security" remote="euclid" />
   <project path="system/sepolicy" name="system_sepolicy" remote="euclid" />
