@@ -104,7 +104,6 @@
   <project path="official_devices" name="official_devices" remote="euclid-devices" />
 
   <!-- packages -->
-  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="euclid" />
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="euclid" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="euclid" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="euclid" />
