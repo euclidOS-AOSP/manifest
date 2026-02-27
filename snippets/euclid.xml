@@ -97,6 +97,9 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
   </project>
 
+  <!-- kernel -->
+  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="euclid" />
+
   <!-- Official Devices -->
   <project path="official_devices" name="official_devices" remote="euclid-devices" />
 
