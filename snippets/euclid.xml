@@ -65,6 +65,8 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="euclid" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="euclid" />
 
+  <!-- Sdk -->
+  <project path="axion-sdk" name="axion-sdk" remote="euclid" />
   <!-- hardware -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="euclid" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="euclid" />
