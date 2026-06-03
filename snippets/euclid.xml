@@ -67,6 +67,8 @@
 
   <!-- Sdk -->
   <project path="axion-sdk" name="axion-sdk" remote="euclid" />
+  <!-- Sdk -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="euclid" />
   <!-- hardware -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="euclid" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="euclid" />
